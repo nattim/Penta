@@ -1,0 +1,544 @@
+@import "colors";
+
+// html {
+//     font-size: 14px;
+// }
+
+body {
+    background-color: $body-bg;
+}
+
+// btn style
+.btn_com {
+    color: $white-text-color;
+    font-family: 'Oswald', sans-serif;
+    font-weight: light;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn_slide_black {
+    background-color: $black-button-color;
+
+    &:hover {
+        background-color: lighten($black-button-color, 10%);
+        color: $white-text-color;
+        text-decoration: none;
+    }
+}
+
+.btn_slide_brown {
+    background-color: $brown-color;
+
+    &:hover {
+        background-color: lighten($brown-color, 10%);
+        color: $white-text-color;
+        text-decoration: none;
+    }
+}
+
+
+// header_top
+.header_top {
+    background-color: #e1e1e1;
+    height: 50px;
+
+    .contacts {
+        color: $darkgrey-text-color;
+        font-family: 'Oswald', sans-serif;
+        font-weight: light;
+        font-size: 12px;
+
+        span.email {
+            margin-left: 20px;
+        }
+    }
+
+    .logo {
+        color: $darkgrey-text-color;
+        font-family: 'Playfair Display', serif;
+        font-weight: regular;
+        font-size: 30px;
+        text-transform: uppercase;
+        justify-content: center;
+    }
+
+    .header_top_menu {
+        .nav_link {
+            color: $darkgrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-left: 4%;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+// /header_top
+
+// navigation
+
+.navigation {
+    height: 45px;
+
+    ul {
+        margin: 0 auto;
+    }
+
+    .navigation_link {
+        color: $black-text-color;
+        font-family: 'Oswald', sans-serif;
+        font-weight: light;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .menu_bar {
+        color: $black-text-color;
+        font-family: 'Oswald', sans-serif;
+        font-weight: light;
+        font-size: 13px;
+
+        .cart i {
+            margin-left: 5px;
+        }
+
+        .search {
+            margin-left: 15px;
+        }
+    }
+}
+
+// slider
+.slider-wrapper {
+    height: 585px;
+    background-color: $blocks-bg;
+
+    .carousel_text {
+        margin-top: 15%;
+
+        h1 {
+            color: $brown-color;
+            font-family: 'Playfair Display', serif;
+            font-weight: regular;
+            font-size: 72px;
+            text-transform: uppercase;
+        }
+
+        .slide_text {
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+        }
+
+        .btn_block {
+            margin-top: 2.7em;
+
+
+            .btn_slide_black {
+                padding: 0.9em 1.4em;
+            }
+
+            .btn_slide_brown {
+                padding: 0.9em 1.9em;
+                margin-left: 6%;
+            }
+        }
+    }
+
+}
+
+// category
+.category {
+    height: 655px;
+
+    .men_col,
+    .women_col,
+    .kids_col {
+        display: flex;
+        background-color: #f4f4f4;
+        padding: 0;
+
+        h2,
+        p {
+            display: inline-block;
+        }
+
+        h2 {
+            color: $brown-color;
+            font-family: 'Playfair Display', serif;
+            font-weight: regular;
+            font-size: 72px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        p {
+            color: $brown-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 100;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .btn_col {
+            padding: 0.8em 1.5em;
+            background-color: $brown-color;
+
+            &:hover {
+                background-color: lighten($brown-color, 10%);
+                color: $white-text-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .men_col {
+        max-width: 545px;
+
+        .men_col_text {
+            margin-top: 72%;
+            padding-left: 30px;
+
+        }
+
+        img {
+
+            width: 302px;
+            height: 655px;
+            align: right;
+        }
+    }
+
+    .women_kid_col {
+
+        .col_text {
+            margin-top: 16%;
+            margin-left: 11%;
+        }
+    }
+
+    .women_col {
+        height: 305px;
+
+        img {
+            margin-top: 31%;
+        }
+    }
+
+    .kids_col {
+        margin-top: 47px;
+
+    }
+}
+
+// category_new
+.category_new {
+    margin-bottom: 3%;
+
+    .category_new_text {
+        margin-top: 6%;
+
+        h3 {
+            color: $black-button-color;
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            font-weight: light;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+        }
+    }
+
+    .category_cards {
+        margin-top: 4.5%;
+
+        p {
+            margin-top: 25px;
+            color: $black-button-color;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            span {
+                color: $lightegrey-text-color;
+                font-family: 'Oswald', sans-serif;
+                font-weight: light;
+                font-size: 13px;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+// /category_new
+
+// subsribe
+.subscribe {
+    background-color: $blocks-bg;
+
+    .suscribe_block {
+        padding: 5.5% 0 4.5% 0;
+
+        h3 {
+            color: $black-button-color;
+            font-family: 'Playfair Display', serif;
+            font-weight: regular;
+            font-size: 36px;
+        }
+
+        p {
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+        }
+
+        form {
+            margin: 10% 0 10% 0;
+
+            input {
+                height: 50px;
+            }
+
+            input::placeholder {
+                color: $lightegrey-text-color;
+                font-family: 'Oswald', sans-serif;
+                font-weight: light;
+                font-size: 14px;
+            }
+
+            .btn_slide_black {
+                padding: 0.9em 2.6em;
+                border: none
+            }
+        }
+    }
+}
+
+// /subsribe
+
+// featured
+.featured {
+    margin-bottom: 3%;
+
+    .featured_text {
+        margin-top: 6%;
+
+        h3 {
+            color: $black-button-color;
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            font-weight: light;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+        }
+    }
+
+    .featured_cards {
+        margin-top: 4.5%;
+
+        .card_1,
+        .cagrd_2 {
+            margin-bottom: 3%;
+        }
+
+        p {
+            margin-top: 25px;
+            color: $black-button-color;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            span {
+                color: $lightegrey-text-color;
+                font-family: 'Oswald', sans-serif;
+                font-weight: light;
+                font-size: 13px;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+// /featured
+// lookbook
+.lookbook_block {
+    background-color: $blocks-bg;
+
+    .lookbook_block {
+        padding: 5.5% 0 7.5% 0;
+
+        h3 {
+            color: $black-button-color;
+            font-family: 'Playfair Display', serif;
+            font-weight: regular;
+            font-size: 36px;
+        }
+
+        p {
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+        }
+
+        .btn_slide_black {
+            margin-top: 10px;
+            padding: 0.8em 2.4em;
+        }
+
+    }
+}
+
+// lookbook
+
+// blog_block
+.blog {
+    background-color: $body-bg;
+    padding-top: 4%;
+
+    .blog_block {
+        position: relative;
+    }
+
+    .blog_block_text {
+        position: absolute;
+        top: 28%;
+        right: 16%;
+        width: 515px;
+        height: 230px;
+        background-color: rgba(248, 248, 250, 0.9);
+
+        .title {
+            padding-top: 30px;
+            margin-bottom: 0;
+            color: #515151;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        p {
+            margin-left: 25px;
+            margin-bottom: 5px;
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+            line-height: 2;
+
+        }
+
+        .btn_slide_black {
+            margin-left: 25px;
+            padding: 0.8em 1.7em;
+        }
+    }
+}
+
+// /blog_block
+// posts
+.posts {
+    margin-top: 70px;
+
+    h3 {
+        color: $black-button-color;
+        font-family: 'Oswald', sans-serif;
+        font-size: 36px;
+        font-weight: light;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $lightegrey-text-color;
+        font-family: 'Oswald', sans-serif;
+        font-weight: light;
+        font-size: 14px;
+    }
+
+    .posts_cards {
+        padding-top: 50px;
+
+        p {
+            margin-top: 25px;
+            color: $black-button-color;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+
+            span {
+                color: $lightegrey-text-color;
+                font-family: 'Playfair Display', serif;
+                font-style: regular;
+                font-size: 13px;
+                text-transform: none;
+            }
+        }
+    }
+
+}
+
+// /posts
+
+// footer
+.footer {
+    background-color: $blocks-bg;
+    height: 240px;
+
+    .footer_nav {
+        margin-top: 70px;
+
+        a {
+            margin-right: 10px;
+            color: $lightegrey-text-color;
+            font-family: 'Oswald', sans-serif;
+            font-weight: light;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footer_social {
+        margin-top: 20px;
+        color: $lightegrey-text-color;
+
+        a {
+            margin-right: 15px;
+            color: $lightegrey-text-color;
+        }
+    }
+
+    .copy_block {
+        margin-top: 25px;
+        color: $lightegrey-text-color;
+        font-family: 'Oswald', sans-serif;
+        font-weight: light;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+}
